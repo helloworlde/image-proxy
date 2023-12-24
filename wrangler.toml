@@ -15,3 +15,7 @@ REMOTE_DATA_ADDRESS=""
 [[r2_buckets]]
 binding = "BLOG_PICTURE"
 bucket_name = "blog-picture"
+
+[[analytics_engine_datasets]]
+binding = "PICTURE_ANALYSIS"
+dataset = "picture"
