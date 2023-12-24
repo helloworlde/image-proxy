@@ -1,4 +1,4 @@
-name = "image-proxy"
+name = "tunnel"
 main = "src/index.js"
 compatibility_date = "2023-12-18"
 workers_dev=true
@@ -8,14 +8,9 @@ workers_dev=true
 # Note: Use secrets to store sensitive data.
 # Docs: https://developers.cloudflare.com/workers/platform/environment-variables
 [vars]
-REMOTE_DATA_ADDRESS=""
-
-# Bind an R2 Bucket. Use R2 to store arbitrarily large blobs of data, such as files.
-# Docs: https://developers.cloudflare.com/r2/api/workers/workers-api-usage/
-[[r2_buckets]]
-binding = "BLOG_PICTURE"
-bucket_name = "blog-picture"
+UUID = "3120a787-7b3d-48cf-9f6e-0b01cb76133a"
+PROXYIP = "158.178.242.56"
 
 [[analytics_engine_datasets]]
-binding = "PICTURE_ANALYSIS"
-dataset = "picture"
+binding = "TUNNEL_ANALYSIS"
+dataset = "tunnel"
